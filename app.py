@@ -21,7 +21,7 @@ beta = st.number_input('beta')
 
 
 # 'pH(CaCl2)':[pH(CaCl2)],'pH(H2O)':[pH(H2O)],
-if st.button('Predict Clay'):
+if st.button('Predict'):
       input=pd.DataFrame({'depth':[depth],'stemp':[stemp],'clay_present':[clay_present],'clay_type':[clay_type],'wa_or_nwa':[wa_or_nwa],'clay_content':[clay_content],'corr_bht':[corr_bht],'alpha':[alpha],'beta':[beta]})
       result = pipe.predict(input)
       st.success('THE TRUE BHT FOR GIVEN DATA WILL BE {}'.format(result))

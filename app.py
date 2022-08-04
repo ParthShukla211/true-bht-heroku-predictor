@@ -10,10 +10,10 @@ st.title('True BHT Predictor')
 
 
 depth = st.number_input('depth')
-stemp = st.number_input('stemp')
+stemp = st.number_input('surface temp')
 clay_present = st.number_input('clay present')
 clay_type = st.number_input('clay type')
-wa_or_nwa = st.number_input('wa or nwa')
+wa_or_nwa = st.number_input('water active ?')
 clay_content = st.number_input('clay content')
 corr_bht = st.number_input('corr bht')
 alpha = st.number_input('alpha')
